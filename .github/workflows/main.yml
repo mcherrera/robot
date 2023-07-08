@@ -34,4 +34,4 @@ jobs:
     - name: Output report
       uses: joonvena/robotframework-docker-action@v1.0
       with:
-        gh_access_token: robot_reports_dir
+        gh_access_token: 'robot_reports_dir'
