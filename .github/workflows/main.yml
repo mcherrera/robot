@@ -21,17 +21,4 @@ jobs:
         name: reports
         path: reports
 
-  report:
-    if: always()
-    needs: [test]
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Download test report
-      uses: actions/download-artifact@v1
-      with:
-        name: reports
-    - name: Output report
-      uses: joonvena/robotframework-docker-action@v1.0
-      with:
-        gh_access_token: 'robot_reports_dir'
+
