@@ -15,7 +15,7 @@ jobs:
       with:
         robot_tests_dir: test
     - name: Store test report
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       if: always()
       with:
         name: reports
